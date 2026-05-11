@@ -252,19 +252,19 @@ export default function App() {
           <div className="space-y-4">
             <div className="flex gap-2">
               {/* 날짜: 너비를 150px로 고정 */}
+              {/* 날짜/금액 너비 5:5로 고정 */}
               <input
                 type="date"
                 value={inputDate}
                 onChange={(e) => setInputDate(e.target.value)}
-                className="w-[150px] bg-slate-50 p-3 rounded-xl text-sm font-bold outline-none border border-transparent focus:border-blue-200"
+                className="flex-5 bg-slate-50 p-3 rounded-xl text-sm font-bold outline-none border border-transparent focus:border-blue-200"
               />
-              {/* 금액: 나머지 공간(flex-1)을 모두 차지 */}
               <input
                 type="number"
                 placeholder="금액 입력"
                 value={inputAmount}
                 onChange={(e) => setInputAmount(e.target.value)}
-                className="flex-1 bg-slate-50 p-3 rounded-xl text-sm font-bold outline-none border border-transparent focus:border-blue-200"
+                className="flex-5 bg-slate-50 p-3 rounded-xl text-sm font-bold outline-none border border-transparent focus:border-blue-200"
               />
             </div>
             <div className="flex gap-2">
